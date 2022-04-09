@@ -1,9 +1,9 @@
-const contractAddress = "0x85728036B7680357ad0D71768566FBF8057Bbf66"; //Replace with your own contract address
+const contractAddress = "0xD86Dcd9C43eDfaEf534B7C8175efD735e6463eF3"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the Kitty Crew NFT Project!!";
+const welcome_h1 = "Welcome to the Phenomenal Woman NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
-const welcome_p  = 'The Kitty Crew is a Nft project focused growing a life long community and creating sustainable value for our crew';
+const welcome_p  = 'The Phenomenal Woman Nft project was inspired by the phenomenal women of web3.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
 const h1_presale_mint = "Pre-Sale Minting Open!!";
 const h1_public_mint = "Public Minting Open!!";

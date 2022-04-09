@@ -7,23 +7,23 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Kitty Crew";
-const description = "Kitty Crew is a collection of unique cat NFTs.";
+const namePrefix = "Phenomenal Woman";
+const description = "5000 phenomenal women on the blockchain.";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5555,
+    growEditionSizeTo: 5000,
     layersOrder: [
-      { name: "0" },
+      
       { name: "1" },
       { name: "2" },
       { name: "3" },
       { name: "4" },
       { name: "5" },
       { name: "6" },
-      { name: "7"},
+      { name: "7" },
       { name: "8"},
       { name: "9"},
       { name: "10"},
@@ -36,8 +36,8 @@ const shuffleLayerConfigurations = true;
 const debugLogs = false;
 
 const format = {
-  width: 1000,
-  height: 1000,
+  width: 1500,
+  height: 1500,
   smoothing: false,
 };
 
@@ -48,22 +48,23 @@ const extraMetadata = {
 // NFTPort Info
 
 // ** REQUIRED **
-const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
+const AUTH = '8cc402ce-ee72-40df-ab99-71fb3770a5ef'; 
 const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'POLYGON'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'Kitty Crew';
-const CONTRACT_SYMBOL = 'KC';
+const CONTRACT_NAME = 'Phenomenal Woman';
+const CONTRACT_SYMBOL = 'PW';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x0E5126Ef843156eB462368BfaC665536A3cFD354';
 const TREASURY_ADDRESS = '0x0E5126Ef843156eB462368BfaC665536A3cFD354';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 20; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 25; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
+
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-04-03T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-04-09T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
@@ -79,8 +80,8 @@ let CONTRACT_ADDRESS = "YOUR CONTRACT ADDRESS"; // If you want to manually inclu
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = true; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "Join the Kitty Crew"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE ="https://ipfs.io/ipfs/bafybeiehglaxtqi2rpkhjexlpfkflppiqyfdynrnxikveherg7hjemh4xu"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "We Are Phenomenal "; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE ="https://ipfs.io/ipfs/bafybeibzjsiqz2wstqkhadylgefkm57k7djcuvtntvxwz4lydpwrxc5chm"; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
@@ -99,7 +100,7 @@ try {
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "",
   creators: [
     {
       address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
@@ -126,8 +127,7 @@ const text = {
   weight: "regular",
   family: "Courier",
   spacer: " => ",
-};
-
+}
 const pixelFormat = {
   ratio: 2 / 128,
 };
