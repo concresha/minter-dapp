@@ -1,7 +1,7 @@
 const contractAddress = "0xD86Dcd9C43eDfaEf534B7C8175efD735e6463eF3"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
-const welcome_h1 = "Welcome to the Phenomenal Woman NFT Project!!";
+const welcome_h1 = "Welcome to the Phenomenal Woman NFTs!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p  = 'The Phenomenal Woman Nft project was inspired by the phenomenal women of web3.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
